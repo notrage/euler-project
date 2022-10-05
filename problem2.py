@@ -1,14 +1,14 @@
 from time import sleep
 
 def problem2():
-    """ Return the sum of fibonacci terms bellow 4000000 """
-    s: int = 0
-    i: int = 0
-    a: int = 1
-    b: int = 2
-    while i < 4000000:
-        s += i
-        a = b + i
-        b = a + i
-        i = a + b
-    return s
+    """ Return the sum of even-valued fibonacci terms bellow 4000000 """
+    somme: int = 2
+    current_fibo: int = 0
+    fibo_zero: int = 1
+    fibo_un: int = 2
+    while current_fibo < 4000000:
+        current_fibo = fibo_zero + fibo_un
+        if current_fibo % 2 ==0: somme += current_fibo
+        fibo_zero = fibo_un
+        fibo_un = current_fibo
+    return somme
