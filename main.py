@@ -7,6 +7,7 @@ from problem5 import problem5
 from problem6 import problem6
 from problem7 import problem7
 from problem8 import problem8
+from problem9 import problem9
 
 if __name__ == "__main__":
     """
@@ -17,7 +18,8 @@ if __name__ == "__main__":
     print(problem5())
     print(problem6())
     print(problem7())
+    print(problem8())
     """
     #t = time()
-    print(problem8())
+    print(problem9())
     #print(time()-t)
