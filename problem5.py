@@ -1,7 +1,4 @@
-from sympy import FourierTransform
-
-
-def problem5():
+def problem_5():
     """ Return the smallest number divisible by all numbers from 1 to 20 """
     found: bool = False
     i: int = 0

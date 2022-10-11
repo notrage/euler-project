@@ -1,5 +1,5 @@
 from sympy import isprime
-def problem7():
+def problem_7():
     """ Return the 10001th prime number """
     number_prime_found: int = 0
     i: int = 0

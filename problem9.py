@@ -1,6 +1,16 @@
-def problem9():
-    for i in range (1, 998):
-        for j in range (i, 998):
-            for k in range(i+j, 998):
-                if ( (i**2 + j**2 == k**2) or (i**2 + k**2 == j**2) or (j**2 + k**2 == i**2) ) and (i + j + k == 1000):
-                    print(i*j*k,i,j,k)
+def problem_9():
+    """ Return a, b and c where a**2 + b**2 = c**2 and where a < b < c """
+    return  max([a*b*(a**2+b**2)**0.5 for a in range(1, 998) for b in range(1, 998) if (-a-b+1000) == (a**2+b**2)**0.5])
+    """
+    Raisonnement mathématique 
+    si  a+b+c =1000
+        a+b-1000=-c
+        c=-a-b+1000
+        
+    et  a**2+b**2=c**2
+        sqrt(a**2+b**2)=c
+        c = sqrt(a**2+a**2)
+
+            c               c
+    donc -a-b+1000 = sqrt(a**2+b**2)
+    """
