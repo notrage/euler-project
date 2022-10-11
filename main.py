@@ -13,17 +13,17 @@ from problem11 import problem_11
 
 if __name__ == "__main__":
     """
-    print(problem1())
-    print(problem2())
-    print(problem3())
-    print(problem4())
-    print(problem5())
-    print(problem6())
-    print(problem7())
-    print(problem8())
-    print(problem9())
-    print(problem10())
+    print(problem_1())
+    print(problem_2())
+    print(problem_3())
+    print(problem_4())
+    print(problem_5())
+    print(problem_6())
+    print(problem_7())
+    print(problem_8())
+    print(problem_9())
+    print(problem_10())
     """
     t = time()
-    print(problem11())
+    print(problem_11())
     print("temps exécution:", time()-t)
