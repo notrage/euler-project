@@ -1,5 +1,8 @@
 def problem_11():
-    file = open("problem11.txt", "r")
+    with open("problem11.txt", "r") as file:
+        data = [list(map(int, a.split(" "))) for a in file.read().split("\n")] 
+    print(data)
+    
     input: list = [j for j in [i.split(" ") for i in file.read().split("\n")]]
     l: list = []
     for i in range(20):
