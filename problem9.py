@@ -1,4 +1,4 @@
-def problem_9():
+def problem_9() -> int:
     """ Return a, b and c where a**2 + b**2 = c**2 and where a < b < c """
     return  max([a*b*(a**2+b**2)**0.5 for a in range(1, 998) for b in range(1, 998) if (-a-b+1000) == (a**2+b**2)**0.5])
     """

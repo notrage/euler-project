@@ -10,6 +10,8 @@ from problem8 import problem_8
 from problem9 import problem_9
 from problem10 import problem_10
 from problem11 import problem_11
+from problem12 import problem_12
+from broken_maths_algo import get_divisors
 
 if __name__ == "__main__":
     """
@@ -23,7 +25,9 @@ if __name__ == "__main__":
     print(problem_8())
     print(problem_9())
     print(problem_10())
+    print(problem_11())
+    print(problem_12())
+    print(get_divisors(10**16))
     """
     t = time()
-    print(problem_11())
     print("temps exécution:", time()-t)

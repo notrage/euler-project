@@ -1,4 +1,4 @@
-def problem_2():
+def problem_2() -> int:
     """ Return the sum of even-valued fibonacci terms bellow 4000000 """
     somme: int = 2
     current_fibo: int = 0

@@ -1,4 +1,4 @@
-def problem_5():
+def problem_5() -> int:
     """ Return the smallest number divisible by all numbers from 1 to 20 """
     found: bool = False
     i: int = 0
