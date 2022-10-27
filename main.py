@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print(problem_10())
     print(problem_11())
     print(problem_12())
-    print(get_divisors(10**16))
+    print(get_divisors(391))
     """
     t = time()
     print("temps exécution:", time()-t)
