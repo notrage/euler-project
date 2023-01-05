@@ -100,3 +100,7 @@ def problem_12() -> int:
         number += rank
         divisors = get_divisors(number)
     return number
+
+def problem_13() -> str:
+    with open("ressources/problem13.txt", "r") as file: data = file.read().split("\n")
+    return str(sum([int(str_number) for str_number in data]))[0:10]        
