@@ -4,5 +4,5 @@ from algorithms import get_divisors
 
 if __name__ == "__main__":
     t = time()
-    print(problem_13())
+    print(problem_15())
     print("temps d'exécution:", time()-t,"secondes.")

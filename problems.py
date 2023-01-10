@@ -103,4 +103,18 @@ def problem_12() -> int:
 
 def problem_13() -> str:
     with open("ressources/problem13.txt", "r") as file: data = file.read().split("\n")
-    return str(sum([int(str_number) for str_number in data]))[0:10]        
+    return str(sum([int(str_number) for str_number in data]))[0:10]
+
+def problem_14() -> int:
+    maximum = (0,0)
+    for i in range(1, 1_000_000):
+        n = i
+        l = 1
+        while n != 1:
+            if n % 2 == 0: n /= 2
+            else: n = 3*n + 1
+            l += 1
+        if l > maximum[1]: maximum = (i, l)
+    return maximum[0]
+
+def problem_15() -> int: return 2**21
