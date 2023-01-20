@@ -1,6 +1,6 @@
 from sympy import isprime
 from algorithms import get_divisors
-from math import isqrt
+from math import isqrt, factorial
 
 def problem_1() -> int:
     """ Return the sum of all the multiples of 3 or 5 bellow 1000 """
@@ -117,4 +117,4 @@ def problem_14() -> int:
         if l > maximum[1]: maximum = (i, l)
     return maximum[0]
 
-def problem_15() -> int: return 2**21
+def problem_15() -> int: return factorial(40) / (factorial(20)*factorial(20))
